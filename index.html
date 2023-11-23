@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231123203538">
+	<title>Главная</title>
+</head>
+
+<body>
+	<div class="wrapper">
+	
+
+<header class="header">
+	<section class="header__section">
+	<a href="index.html" class="header__logo">HOLST-NA-ZAKAZ</a>
+	
+	<div class="header__menu menu">
+		<nav class="menu__body">
+		   <ul class="menu__list">
+				<a href="#" class="menu__logo">HOLST-NA-ZAKAZ</a>
+		   	<li class="drop">
+					<span class="menu__link drop-down">Портреты на холсте</span>
+					<ul class=" drops">
+						<li><a href="index.html" class="drops__link">Главная</a></li>
+						<li><a href="pop.html" class="drops__link">Поп-Арт</a></li>
+						<li><a href="photo.html" class="drops__link">По фото</a></li>
+						<li><a href="holst.html" class="drops__link">Печать</a></li>
+						<li><a href="love.html" class="drops__link">Love is</a></li>
+					</ul>   
+				</li>
+		   	<li><a href="#" class="menu__link">Наши работы</a></li>
+		   	<li class=" drop">
+					<span class="menu__link drop-down">О компании</span>
+					<ul class="drops">
+						<li><a href="#" data-goto=".what-is-price" class="drops__link menu__scrol drops__scrol"> Что входит в стоимость</a></li>
+						<li><a href="#" data-goto=".reviews"  class="drops__link  menu__scrol drops__scrol">Отзывы</a></li>
+					</ul>
+				</li>
+		   	<li class=" drop">
+					<span class="menu__link drop-down">Помощь</span>
+					<ul class="drops">
+						<li><a href="#" data-goto=".why-choose-us" class="drops__link menu__scrol drops__scrol">Почему выбирают нас</a></li>
+						<li><a href="#" class="drops__link menu__scrol drops__scrol">Часто задаваемые вопросы</a></li>
+					</ul>
+				</li>
+					<ul class="menu-drop-down">
+						<li><a href="#" class="link-drop-down">Цены и размеры</a></li>
+						<li><a href="#" class="link-drop-down">Гарантии и возврат</a></li>
+						<li><a href="#" class="link-drop-down">Как оформить заказ</a></li>
+						<li><a href="#" class="link-drop-down">Вопросы и ответы</a></li>
+						<li><a href="#" class="link-drop-down">Требования к фотографиям</a></li>
+						<li><a href="#" class="link-drop-down">Оплатить заказ</a></li>
+						<li><a href="#" class="link-drop-down">Карта сайта</a></li>
+						<li><a href="#" class="link-drop-down">Где мой заказ</a></li>
+						<li><a href="#" class="link-drop-down">Каталог образов</a></li>
+						<li><a href="#" class="link-drop-down">Терминология</a></li>
+						<li><a href="#" class="link-drop-down">Каталог багетных рам</a></li>
+					</ul>
+		   	<li><a href="#" data-goto=".order" class="menu__link menu__scrol drops__scrol">Оплата и доставка</a></li>
+		   	<li><a href="#" data-goto=".footer" class="menu__link menu__scrol drops__scrol">Контакты</a></li>
+		   </ul>
+			<div class="navbar-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			 </div>
+			 <div class="overlay" id="overlay"></div>
+		</nav>
+	</div>
+	<a class="header__btn" data-da=".menu__list,992,last">Заказать звонок</a>
+	<div class="header__block-phone">
+	<a href="tel:+7495115381" class="header__phone" >+7 (495) 115-38-16</a>
+	
+	
+		<a href=" https://wa.me/79207813387" target="blank" class="header__phone-watsaap">+7 968 603-85-98</a>
+		<a href="mailto:zakaz@holst-na-zakaz.ru" class="header__phone-mail">zakaz@holst-na-zakaz.ru</a>
+	</div>
+	<a href="#" class="header__btn-2" data-da=".menu__list,992,last">Заказ в один клик</a>
+	
+</section>
+<section class="header__print">
+	<div class="print">
+		<h1 class="print__title">Печать на холсте по фото со скидкой -25%</h1>
+		<div class="print__text">Изготовление заказа от 30 минут и бесплатная доставка по Москве</div>
+		<a data-goto=".calculation" class="print__btn menu__scrol" href="#">Рассчитать стоимость</a>		
+	</div>	
+</section>
+</header>
+	<main class="main">
+		<section class="content">	
+			<section class="content__calculation">
+	<p class="calculation__title">Расчет стоимости и оформление заказа</p>
+	<div class="calculation">
+		<div class="calculation__wrapper">
+		<div class="calculation__params ">	
+			<div class="params">		
+			<div class="params__photo">
+				<span class="params__number">1</span>
+				
+				<div class="params__title">Выберите фото</div>
+				<label for="file-input" class=" params__button">
+					<span class="params__btn" id="addfile">Выбрать фото</span>						
+				 </label>
+			</div>
+			<div class="params__photo size">
+				<span class="params__number">2</span>
+				<div class="params__title size-title">Выберите размер (см)</div>
+				<span class="size__width1 width active">30х40</span>
+				<span class="size__width2 width">40х60</span>
+				<span class="size__width3 width">50х70</span>
+				<span class="size__width4 width">60х90</span>
+				<span class="size__width5 width">120х80</span>
+				<picture><source srcset="../../img/product5.webp" type="image/webp"><img src="../../img/product5.png" alt="" class="size__img img0"></picture>
+				<picture><source srcset="../../img/product4.webp" type="image/webp"><img src="../../img/product4.png" alt="" class="size__img img1"></picture>
+				<picture><source srcset="../../img/product3.webp" type="image/webp"><img src="../../img/product3.png" alt="" class="size__img img2"></picture>
+				<picture><source srcset="../../img/product2.webp" type="image/webp"><img src="../../img/product2.png" alt="" class="size__img img3"></picture>
+				<picture><source srcset="../../img/product1.webp" type="image/webp"><img src="../../img/product1.png" alt="" class="size__img img4"></picture>
+			</div>
+			<div class="params__photo">
+				<span class="params__number">3</span>
+				<div class="params__title">Выберите материал</div>
+				<p class="params__btn matery">Холст льняной <span class="question">?</span></p>
+				<p class="params__btn params__btn2 matery matery-active">Холст натуральный<span class="question">?</span></p>
+			</div>
+			<div class="params__photo art">
+				<span class="params__number">4</span>
+				<div class="params__title">Дизайн-обработка</div>
+				<p class="params__btn designs">Без обработки</p>
+				<p class="params__btn params__btn2 designs">Живопись <span class="question">?</span></p>
+				<p class="params__btn designs">Дрим-арт <span class="question">?</span></p>
+				<p class="params__btn params__btn4 designs">Фотоколлаж <span class="question">?</span></p>
+				<p class="params__btn designs">Портрет маслом <span class="question">?</span></p>
+				<p class="params__btn params__btn6 designs designs-active">Портрет в образе <span class="question">?</span></p>
+				<p class="params__btn designs">Фотомазайка <span class="question">?</span></p>
+				<p class="params__btn params__btn8 designs">Love-is <span class="question">?</span></p>
+			</div>
+			<div class="params__photo">
+				<span class="params__number">5</span>
+				<div class="params__title">Покрытие холста</div>
+				<p class="params__btn covering ">Покрытие лаком <span class="question">?</span></p>
+				<p class="params__btn coverage-btn2 covering covering-active">Покрытие 3D-гелем <span class="question">?</span></p>
+			</div>
+			<div class="params__photo frame">
+				<span class="params__number">6</span>
+				<div class="params__title">Багетные рамки</div>
+				<p class="params__btn frame-btn" id="baguettes">Добавить багетную рамку</p>
+			</div>
+		</div>	
+		</div>
+			<div class="calculation__descriptions-body">
+			<div class="calculation__descriptions">
+				<label for="file-input" class="custom-file-upload">
+				<div id="preview"></div>
+				<span>Выбрать фото</span>						
+				 </label>
+				 <input type="file" id="file-input" style="display: none">
+				<div class="descriptions__dedescription dedescription">
+					<p class="dedescription__title">Описание заказа</p>
+					<p class="dedescription__text"><span class="dedescription__pretext">Размер:</span> <span id="width__height">30х40</span> см</p>
+					<p class="dedescription__text"><span class="dedescription__pretext">Материал:</span> <span id="matery">Холст натуральный</span></p>
+					<p class="dedescription__text"><span class="dedescription__pretext">Обработка:</span><span id="design">Портрет в образе</span> </p>
+					<p class="dedescription__text"><span class="dedescription__pretext">Покрытие:</span> <span id="canvas">Покрытие 3D-гелем</span></p>
+					<p class="dedescription__text"><span class="dedescription__pretext">Багетные рамки:</span> <span id="baguette">Нет</span> </p>
+					
+				</div>
+				<div class="dedescription__price price">
+					<p class="price__sum">Стоимость вашего заказа: <span>0</span></p>
+					<p class="price__text">Доставим бесплатно по Москве в
+						пределах пешей доступности от метро</p>
+				</div>	
+			</div>
+			<div class="frames">
+				<p class="frames__title">Багетные рамки</p>
+				<div class="frames__column col1">
+					<picture><source srcset="../../img/1.webp" type="image/webp"><img class="frames__img" src="../../img/1.jpg" alt=""></picture>
+					<label class="radio"><input name="radio-frames"  type="radio"> Выбрать</label>
+					<ul class="frames__list">
+						<li class="item">Артикул: 145802</li>
+						<li class="item">Материал: Пластик</li>
+						<li class="item">Ширина: 5.7 см</li>
+						<li class="item">Цвет: Шоколадный</li>
+						<li class="item">Цена: 840 р за п.м</li>
+					</ul>
+				</div>					
+				<div class="frames__column col2">
+					<picture><source srcset="../../img/2.webp" type="image/webp"><img class="frames__img" src="../../img/2.jpg" alt=""></picture>
+					<label class="radio"><input name="radio-frames"  type="radio"> Выбрать</label>
+					<ul class="frames__list">
+						<li class="item">Артикул: 145802</li>
+						<li class="item">Материал: Пластик</li>
+						<li class="item">Ширина: 5.7 см</li>
+						<li class="item">Цвет: Шоколадный</li>
+						<li class="item">Цена: 840 р за п.м</li>
+					</ul>
+				</div>					
+				<div class="frames__column col3">
+					<picture><source srcset="../../img/3.webp" type="image/webp"><img class="frames__img" src="../../img/3.jpg" alt=""></picture>
+					<label class="radio"><input name="radio-frames"  type="radio"> Выбрать</label>						
+					<ul class="frames__list">
+						<li class="item">Артикул: 145802</li>
+						<li class="item">Материал: Пластик</li>
+						<li class="item">Ширина: 5.7 см</li>
+						<li class="item">Цвет: Шоколадный</li>
+						<li class="item">Цена: 840 р за п.м</li>
+					</ul>
+				</div>					
+				<div class="frames__column col4">
+					<picture><source srcset="../../img/4.webp" type="image/webp"><img class="frames__img" src="../../img/4.jpg" alt=""></picture>
+					<label class="radio"><input name="radio-frames"  type="radio"> Выбрать</label>
+					<ul class="frames__list">
+						<li class="item">Артикул: 145802</li>
+						<li class="item">Материал: Пластик</li>
+						<li class="item">Ширина: 5.7 см</li>
+						<li class="item">Цвет: Шоколадный</li>
+						<li class="item">Цена: 840 р за п.м</li>
+					</ul>
+				</div>					
+			</div>
+			</div>			
+		</div>
+	</div>
+</section>	
+			<section class="content__order">
+	<div class="order">
+	<p class="order__title">Завершите оформление заказа</p>
+	<form class="order__form" action="#" method="POST" enctype="multipart/form-data">
+		<div class="label-form">
+		<input class="order__form-name" placeholder="Имя" type="text" data-validate-field="name">
+		</div>
+		<div class="label-form">
+		<input class="order__form-mail" placeholder="E-mail" type="email" data-validate-field="email">
+		</div>
+		<div class="label-form">
+		<input class="order__form-tel" placeholder="Телефон" type="tel" data-validate-field="tel">
+		</div>
+		<div class="label-form">
+		<input class="order__form-code" placeholder="Промо-код" type="text" data-validate-field="text">
+		</div>
+		<input class="order__form-coment" placeholder="Комментарий" type="text" data-validate-field="text">
+		<div class="label-form">
+		<input class="order__form-adress" placeholder="Адрес" type="text" data-validate-field="adress">
+		</div>
+		<input class="order__form-date" placeholder="Дата доставки" type="date" data-validate-field="date">
+		<input class="order__form-time" placeholder="С 0:00 до 12:00" type="time" data-validate-field="time">
+		<label class="order__form-radio"> <input name="ok" type="checkbox" data-validate-field="radio"> <span>Я ознакомлен и согласен с политикой</span> <span class="span2">конфиденциальности</span> </label>
+		<button class="order__form-btn">Оформить заказ</button>
+		<a href="#" class="order__form-link form-link1">Как мы рисуем?</a>
+		<a href="#" class="order__form-link form-link2">Создание портрета</a>
+	</form>
+</div>
+</section>
+			<section class="content__what-is-price">
+	<div class="what-is-price">
+		<p class="what-is-price__title">Что входит в стоимость?</p>
+		<div class="what-is-price__column column1">
+			<span class="what-is-price__number">1</span>
+			<p class="what-is-price__subtitle">Крепёж</p>
+			<p class="what-is-price__text">На каждый портрет устанавливаеться крепеж (крокодил).</p>					
+		</div>				
+		<div class="what-is-price__column column2">
+			<span class="what-is-price__number">2</span>
+			<p class="what-is-price__subtitle">Деревянный подрамник</p>
+			<p class="what-is-price__text">Мы используем только подрамники из высокосортной сосны.</p>					
+		</div>				
+		<div class="what-is-price__column column3">
+			<span class="what-is-price__number">3</span>
+			<p class="what-is-price__subtitle">Натуральный хлопковый холст</p>
+			<p class="what-is-price__text">Натуральный холст самый прочный из всех видов холстов. Сохраняет цвет на долгие годы.</p>					
+		</div>	
+		<div class="what-is-price__image">
+			<img class="what-is-price__img1" src="../../img/Group 119.jpg" alt="">
+			
+		</div>
+		<div class="what-is-price__column column4">
+			<span class="what-is-price__number">4</span>
+			<p class="what-is-price__subtitle">Галерейная натяжка</p>
+			<p class="what-is-price__text">В наших портретах мы используем галерейную натяжку. Также можем выполнить студийную натяжку и стандартную натяжку.</p>					
+		</div>
+		<div class="what-is-price__column column5">
+			<span class="what-is-price__number">5</span>
+			<p class="what-is-price__subtitle">Ручная отрисовка изображения</p>
+			<p class="what-is-price__text">Наш художник вручную на графическом планшете отрисуют портрет и пришлем макет на согласование.</p>					
+		</div>
+		<div class="what-is-price__column column6">
+			<span class="what-is-price__number">6</span>
+			<p class="what-is-price__subtitle">Упаковка</p>
+			<p class="what-is-price__text">Все заказы мы бережно упаковываем в защитную пленку и подарочную упаковку, а также у нас бесплатная доставка по Москве!</p>					
+		</div>	
+		<div class="what-is-price__additionally">
+			<div class="additionally">
+				<div class="additionally__title">Дополнительно можно заказать:</div>
+				<p class="additionally__text"><span></span>Багетная рама</p>
+				<p class="additionally__text"><span></span>Покрытие текстурным гелем</p>
+				<p class="additionally__text"><span></span>Покрытие акриловым лаком</p>
+				<p class="additionally__text"><span></span>Подарочная упаковка</p>
+			</div>
+		</div>
+				
+	</div>
+</section>
+			<section class="content__why-choose-us">
+	<div class="why-choose-us">
+		<div class="why-choose-us__title">Почему выбирают нас?</div>
+		<div class="why-choose-us__colums">
+			<div class="why-choose-us__column">
+				<div class="why-choose-us__image">
+					<img src="../../img/fast-delivery.svg" alt="fast-delivery" class="why-choose-us__img">
+				</div>
+				<p class="why-choose-us__text">Срочное изготовления
+					и бесплатная доставка
+					по Москве</p>
+				
+			</div>
+			<div class="why-choose-us__column">
+				<div class="why-choose-us__image">
+					<img src="../../img/printer1.svg" alt="printer" class="why-choose-us__img">
+				</div>
+				<p class="why-choose-us__text">Самое современное
+					оборудование и
+					технологии</p>
+				
+			</div>
+			<div class="why-choose-us__column">
+				<div class="why-choose-us__image">
+					<img src="../../img/wallet.svg" alt="wallet" class="why-choose-us__img">
+				</div>
+				<p class="why-choose-us__text">Мы работаем без
+					предоплаты</p>
+				
+			</div>
+			<div class="why-choose-us__column">
+				<div class="why-choose-us__image">
+					<img src="../../img/gift.svg" alt="gift" class="why-choose-us__img">
+				</div>
+				<p class="why-choose-us__text">Подарок на выбор каждому клиенту</p>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+</section>			
+			<section class="content__offer">
+	<div class="offer">
+		<p class="offer__title">Что мы предлагаем?</p>
+		<div class="offer__body">
+			<picture><source srcset="../../img/offer1.webp" type="image/webp"><img class="body-offer__img" src="../../img/offer1.jpg" alt="Фото довольных клиентов"></picture>
+			<article class="body-offer__article">
+				<p class="body-offer__title">Коллаж на холсте</p>
+				<p class="body-offer__text">Хотите написать интересную историю из любимых фотографий? Мы предлагаем создать оригинальный фотоколлаж, который без слов расскажет о самых ярких моментах вашей жизни!
+					<span>Необычный красочный коллаж из фото – это всегда уместный подарок, который понравится всем без исключения. Универсальное решение для поздравления с юбилеем, днем рождения, знаменательной датой и просто – для поднятия настроения. </span>
+				</p>
+				<a href="" class="body-offer__link">Узнать больше</a>
+			</article>
+			<article class="body-offer__article body-offer__article2">
+				<p class="body-offer__title">Портреты в художественных стилях</p>
+				<p class="body-offer__text">Портреты могут выполняться в различных стилях: классических, фэнтезийных. Цветовую гамму и стиль оформления подбирает сам заказчик. 
+					<span>Если вы знаете, в каком стиле выполнен интерьер в доме (или офисе) того, кому вы собираетесь подарить фотопортрет, можно создать идеально подходящую в него картину, ограничения только в вашей фантазии, а наши опытные мастера и высокотехнологичное современное оборудование могут воплотить в жизнь любую задумку!</span>
+				</p>
+				<a href="" class="body-offer__link">Узнать больше</a>
+			</article>
+			<picture><source srcset="../../img/offer2.webp" type="image/webp"><img class="body-offer__img2" src="../../img/offer2.jpg" alt="Фото довольных клиентов"></picture>
+		</div>
+	</div>
+</section>						
+			<section class="content__stages">
+	<div class="stages">
+		<p class="stages__title">Этапы изготовления</p>
+		<div class="stages__column">
+			<span class="stages__number">1</span>
+			<p class="stages__subtitle">Заявка и расчет</p>
+			<p class="stages__text">Пришлите нам фото для обработки, и наши специалисты свяжутся с Вами.</p>
+			
+		</div>
+		<div class="stages__column">
+			<span class="stages__number">2</span>
+			<p class="stages__subtitle">Согласование макета</p>
+			<p class="stages__text">Наш дизайнер подготовит макет и отправить вам на согласование.</p>
+			
+		</div>
+		<div class="stages__column">
+			<span class="stages__number">3</span>
+			<p class="stages__subtitle">Изготовление</p>
+			<p class="stages__text">После согласования макета ваш заказ поступает в производство.</p>
+			
+		</div>
+		<div class="stages__column column-last">
+			<span class="stages__number">4</span>
+			<p class="stages__subtitle">Доставка</p>
+			<p class="stages__text">Бесплатная доставка
+				по Москве. А также
+				возможна доставка в
+				любую точку России.</p>
+			
+		</div>
+		<picture><source srcset="../../img/stages.webp" type="image/webp"><img class="stages__img" src="../../img/stages.jpg" alt="Фото довольных клиентов"></picture>
+		
+	</div>
+</section>									
+			<section class="content__products products">                      
+	<div class="products__title">Цены и размеры</div>
+	<div class="products__items">
+		<div class="products__item">
+			<div class="products__body">
+			
+			<a class="products__image">
+				<p class="products__size">30х40 см</p>
+				<picture><source srcset="../../img/product5.webp" type="image/webp"><img class="products__img" src="../../img/product5.png" alt="#"></picture></img>					
+			</a>			
+				<span class="products__ceil crossed">1577 руб.</span> 
+				<span class="products__ceil">980 руб.</span>	
+			</div>
+			<a href="#" class="products__button">Заказать</a>
+		</div>	
+		<div class="products__item">
+			<div class="products__body">
+			
+			<a class="products__image">
+				<p class="products__size">60х40 см</p>
+				<picture><source srcset="../../img/product4.webp" type="image/webp"><img class="products__img" src="../../img/product4.png" alt="#"></picture></img>					
+			</a>			
+				<span class="products__ceil crossed">2150 руб.</span> 
+				<span class="products__ceil">1520 руб.</span>	
+			</div>
+			<a href="#" class="products__button">Заказать</a>
+		</div>	
+		<div class="products__item">
+			<div class="products__body">
+			
+			<a class="products__image">
+				<p class="products__size">50х70 см</p>
+				<picture><source srcset="../../img/product3.webp" type="image/webp"><img class="products__img" src="../../img/product3.png" alt="#"></picture></img>					
+			</a>			
+				<span class="products__ceil crossed">2790 руб.</span> 
+				<span class="products__ceil">2032 руб.</span>	
+			</div>
+			<a href="#" class="products__button">Заказать</a>
+		</div>	
+		<div class="products__item">
+			<div class="products__body">
+			
+			<a class="products__image">
+				<p class="products__size">90х60 см</p>
+				<picture><source srcset="../../img/product2.webp" type="image/webp"><img class="products__img" src="../../img/product2.png" alt="#"></picture></img>					
+			</a>			
+				<span class="products__ceil crossed">3494 руб.</span> 
+				<span class="products__ceil ">2595 руб.</span>	
+			</div>
+			<a href="#" class="products__button">Заказать</a>
+		</div>	
+		<div class="products__item">
+			<div class="products__body">
+			
+			<a class="products__image">
+				<p class="products__size">120х80 см</p>
+				<picture><source srcset="../../img/product1.webp" type="image/webp"><img class="products__img" src="../../img/product1.png" alt="#"></picture></img>					
+			</a>			
+				<span class="products__ceil crossed">1577 руб.</span> 
+				<span class="products__ceil ">1577 руб.</span>	
+			</div>
+			<a href="#"  class="products__button">Заказать</a>
+		</div>	
+	</div>
+	</section>										
+			<section class="content__reviews">
+	<div class="reviews">
+		<p class="reviews__title">Отзывы наших клиентов</p>
+		<div class="reviews__card">
+			<div class="card">
+				<span class="card__avatar"></span>
+				<span class="card__name">Наталья</span>
+				<div class="card__text">Спасибо за вашу работу! Все здорово, довольна картиной на 100% и даже больше. Дизайнер Артем помог подобрать фото, посоветовал стилистику исполнения, чтобы портрет на холсте получился ярким и необычным, как я и хотела. Заказ выполнили очень быстро, всего за 2 дня. Доставили мне домой. Плюс в том, что оплачивала уже по факту доставки, то есть я ничем не рисковала. Работой ребят очень довольна, все на высшем уровне – и портрет и обслуживание. Огромное вам спасибо за такую красоту!</div>
+				
+			</div>
+			<div class="card">
+				<span class="card__avatar"></span>
+				<span class="card__name">Екатерина</span>
+				<div class="card__text">Благодарю за вашу волшебную работу! Печать фото на холсте заказываю уже второй раз и опять все на высоте! Первый раз обращался в эту мастерскую в прошлом году. Тогда заказывал фотоколлаж для родителей в честь серебряной свадьбы. В этот раз поздравлял сестру с днем рождения. Портрет ей очень понравился, тем более что доставку я заказал к ней домой, и это был сюрприз. С удовольствием буду обращаться к вам и дальше.</div>						
+			</div>
+			<div class="card hiden">
+				<span class="card__avatar"></span>
+				<p class="card__name">Наталья</p>
+				<div class="card__text">Спасибо за вашу работу! Все здорово, довольна картиной на 100% и даже больше. Дизайнер Артем помог подобрать фото, посоветовал стилистику исполнения, чтобы портрет на холсте получился ярким и необычным, как я и хотела. Заказ выполнили очень быстро, всего за 2 дня. Доставили мне домой. Плюс в том, что оплачивала уже по факту доставки, то есть я ничем не рисковала. Работой ребят очень довольна, все на высшем уровне – и портрет и обслуживание. Огромное вам спасибо за такую красоту!</div>
+				
+			</div>
+			<div class="card hiden">
+				<span class="card__avatar"></span>
+				<p class="card__name">Екатерина</p>
+				<div class="card__text">Благодарю за вашу волшебную работу! Печать фото на холсте заказываю уже второй раз и опять все на высоте! Первый раз обращался в эту мастерскую в прошлом году. Тогда заказывал фотоколлаж для родителей в честь серебряной свадьбы. В этот раз поздравлял сестру с днем рождения. Портрет ей очень понравился, тем более что доставку я заказал к ней домой, и это был сюрприз. С удовольствием буду обращаться к вам и дальше.</div>						
+			</div>
+		</div>
+		<span class="reviews__btn">Читать все отзывы</span>
+	</div>
+</section>											
+			<section class="content__answers">
+	<div class="answers">
+		<div class="answers__title">Ответы на часто задаваемые вопросы</div>
+		
+		<div class="answers__box">
+			<div class="answers__label">Как можно с вами связаться?</div>
+			<div class="answers__content">
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At commodi officiis neque dicta eligendi. At rem reprehenderit sed, reiciendis commodi vel tenetur quos eveniet in laborum quas inventore, nisi sit quibusdam itaque explicabo! Suscipit, quae repellendus ut cupiditate similique asperiores illum reprehenderit, fugiat pariatur beatae autem vitae veniam placeat dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus assumenda eaque architecto quia, exercitationem reiciendis</p>
+			</div>
+		</div>
+		<div class="answers__box">
+			<div class="answers__label">Если у меня нет цифровой фотографии?</div>
+			<div class="answers__content">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus assumenda eaque architecto quia, exercitationem reiciendis</p>
+			</div>
+		</div>
+		<div class="answers__box">
+			<div class="answers__label">Сколько нужно времени на изгоовление заказа?</div>
+			<div class="answers__content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sequi sed veniam assumenda delectus harum, laudantium mollitia odit dolores pariatur deserunt repellendus iusto? Repudiandae odio ad cupiditate nostrum corrupti eius aperiam quo vitae eveniet numquam sit praesentium officiis deleniti facilis quidem obcaecati alias enim, suscipit a incidunt necessitatibus blanditiis voluptatem ratione! Nemo temporibus iure ipsum ipsa voluptatibus animi reiciendis, eius impedit doloribus nihil, quo ratione ipsam veniam vel obcaecati cupiditate placeat aut rerum excepturi expedita laudantium numquam consequatur error ullam. Cumque nihil sunt at dicta, quia quam ut laboriosam architecto. Saepe illo cum, velit dignissimos consequatur quo pariatur excepturi molestias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus assumenda eaque architecto quia, exercitationem reiciendis</p>
+			</div>
+		</div>
+		<div class="answers__box">
+			<div class="answers__label">Можно увидеть макет до получения заказа?</div>
+			<div class="answers__content">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus assumenda eaque architecto quia, exercitationem reiciendis</p>
+			</div>
+		</div>
+		<div class="answers__box">
+			<div class="answers__label">Если мне не понравился макет?</div>
+			<div class="answers__content">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus assumenda eaque architecto quia, exercitationem reiciendis</p>
+			</div>
+		</div>
+		<div class="answers__box">
+			<div class="answers__label">Нужна ли предоплата?</div>
+			<div class="answers__content">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus assumenda eaque architecto quia, exercitationem reiciendis</p>
+			</div>
+		</div>
+		<div class="answers__box">
+			<div class="answers__label">Какие гарантии вы даете?</div>
+			<div class="answers__content">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus assumenda eaque architecto quia, exercitationem reiciendis</p>
+			</div>
+		</div>
+		<div class="answers__box">
+			<div class="answers__label">Как оплатить заказ?</div>
+			<div class="answers__content">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus assumenda eaque architecto quia, exercitationem reiciendis</p>
+			</div>
+		</div>
+		<div class="answers__box">
+			<div class="answers__label">Как получить готовый заказ?</div>
+			<div class="answers__content">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus assumenda eaque architecto quia, exercitationem reiciendis</p>
+			</div>
+		</div>
+		<div class="answers__box">
+			<div class="answers__label">Если мне нужно получить заказ в другом городе?</div>
+			<div class="answers__content">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem delectus assumenda eaque architecto quia, exercitationem reiciendis</p>
+			</div>
+		</div>
+		
+	</div>
+</section>	
+		</section>
+	</main>
+	<footer class="footer">
+	<section class="footer__contacts">
+		<div class="contacts">
+			<p class="contacts__title title">Контакты</p>
+			<p class="contacts__item">Бесплатный звонок по РФ:</p>
+			<p class="contacts__item">8 800 302-2532</p>
+			<p class="contacts__item">Адрес: г. Москва</p>
+			<p class="contacts__item">МКАД 24 км вл. 3</p>
+			<span class="contacts__btn">Схема проезда</span>
+			<ul class="contacts__list">
+				<li><a href="#" class="contacts__link contacts-watsapp">+7 968 603-85-98</a></li>
+				<li><a href="#" class="contacts__link contacts-tel">+7 (495) 115-38-16 (Москва)</a></li>
+				<li><a href="#" class="contacts__link contacts-tel">+7 (812) 408-08-17 (Санкт-Петербург)</a></li>
+				<li><a href="#" class="contacts__link contacts-mail">zakaz@holst-na-zakaz.ru</a></li>
+				<li><a href="#" class="contacts__link contacts-scipe">Holst-na-zakaz.ru</a></li>
+			</ul>
+		</div>
+		<div class="chart">
+			<div class="chart__title title">График работы</div>
+			<p class="chart__text">ПН-ПТ - c 10:00 до 18:00</p>
+		</div>
+		<div class="requisites">
+			<div class="requisites__title title">Реквизиты</div>
+			<p class="requisites__text">Скачать реквизиты</p>
+			<p class="requisites__text"></p>
+			<p class="requisites__text">Политика конфиденциальности</p>
+			<p class="requisites__text">Условия публичной оферты</p>
+			<p class="requisites__text">Узнайте о скидках и акциях</p>
+			<p class="requisites__text">Для сотрудничества</p>
+		</div>
+		<div class="to-be-paid">
+			<div class="to-be-paid__title title">Принимаем к оплате</div>
+			<img src="../../img/visa.svg" alt="visa" class="to-be-paid__img">
+			<img src="../../img/mc.svg" alt="mc" class="to-be-paid__img">
+			<img src="../../img/mir.svg" alt="mir" class="to-be-paid__img">
+			<img src="../../img/monye.svg" alt="monye" class="to-be-paid__img">
+		</div>
+		<div class="we-deliver">
+			<div class="we-deliver__title title">Доставляем по РФ</div>
+			<img class="we-deliver__img" src="../../img/cdek.svg" alt="cdek">
+			<picture><source srcset="../../img/ems-1.webp" type="image/webp"><img class="we-deliver__img" src="../../img/ems-1.png" alt="ems"></picture>
+		</div>
+		<div class="subscription">
+			<div class="subscription__title title">Подписывайтесь на нас</div>
+			<img class="subscription__img" src="../../img/vk.svg" alt="vk">
+			<img class="subscription__img" src="../../img/instagram.svg" alt="instagram">
+			<img class="subscription__img" src="../../img/facebook-logo.svg" alt="facebook">
+			<img class="subscription__img" src="../../img/youtube.svg" alt="youtube">
+			<img class="subscription__img" src="../../img/twitter.svg" alt="twitter">
+			<img class="subscription__img" src="../../img/odnoklassniki-logo.svg" alt="odnoklassniki">
+		</div>
+		<p class="footer__footer">© Холст на заказ, 2017-2021  |  holst-na-zakaz.ru  |  info@holst-na-zakaz.ru</p>
+	</section>	
+</footer>
+</div>
+<div class="modal">
+	<div class="modal__body">
+		<div class="modal__title">Ваш заказ оформлен !</div>
+		<p class="modal__icon"><picture><source srcset="./img/cross-symbol_icon-icons.com_74149.webp" type="image/webp"><img src="./img/cross-symbol_icon-icons.com_74149.png" alt="Крестик"></picture></p>
+	</div>
+</div>
+<script src="js/app.min.js?_v=20231123203538"></script>
+</body>
+
+</html>
