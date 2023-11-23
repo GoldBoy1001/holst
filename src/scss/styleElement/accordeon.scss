@@ -1,0 +1,20 @@
+.answers .answers__box .answers__content {
+	position: relative;
+  	background-color: #fff; /* Цвет фона контента */
+  	overflow: hidden;
+  	max-height: 0; /* Скрываем контент */
+  	transition: 0.3s;
+ }
+.answers .answers__box.answers__active .answers__label::after {
+	content: "\2014"; /* Меняем иконку на "-" при нажатии на элемент */
+ }
+.menu__list .menu__box .menu__content {
+	position: relative;
+  	background-color: #fff; /* Цвет фона контента */
+  	overflow: hidden;
+  	max-height: 0; /* Скрываем контент */
+  	transition: 0.3s;
+ }
+.menu__list .menu__box.menu__active .menu__label::after {
+	content: "\2014"; /* Меняем иконку на "-" при нажатии на элемент */
+ }

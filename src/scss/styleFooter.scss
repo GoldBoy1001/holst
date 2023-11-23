@@ -1,0 +1,263 @@
+.footer {
+	color: #fff;
+	padding: 60px 0px;
+	grid-area: footer;
+	background: linear-gradient(336deg, #EF780A 0%, #FFA722 99.50%);
+	display: grid;
+	grid-template: auto / 1fr minmax(auto, 1200px)  1fr;
+	
+@media (max-width: 640px) {
+	padding: 40px 0px;
+}
+@media (max-width: 480px) {
+	padding: 20px 0px;
+}
+	// .footer__contacts
+
+	&__contacts {
+		padding: 0px 15px;
+		grid-column: 2/3;
+		display: grid;
+		grid-template: auto / repeat(3, auto-fit);
+		row-gap: 30px;
+		column-gap: 100px;
+		grid-template-areas: 
+		"contacts chart to-be-paid"
+		"contacts requisites we-deliver"
+		"contacts requisites subscription"
+		"footer footer footer"
+		;
+		@media (max-width: 1200px) {
+			column-gap: 30px;
+		}
+		@media (max-width: 1020px) {
+			grid-template-areas: 
+		"contacts contacts chart "
+		"contacts contacts requisites"
+		"contacts contacts requisites"
+		"to-be-paid we-deliver subscription"
+		"footer footer footer"
+		;
+		}
+		@media (max-width: 700px) {
+			row-gap: 20px;
+			column-gap: 0px;
+			grid-template: auto / 1fr;
+			grid-template-areas: 
+		"contacts  "
+		"chart"
+		"requisites"
+		"to-be-paid "
+		"we-deliver"
+		"subscription"
+		"footer"
+		;
+		}
+		@media (max-width: 480px) {
+			row-gap: 15px;
+		}
+	}
+
+	// .footer__footer
+
+	&__footer {
+		grid-area: footer;
+		@media (max-width: 640px) {
+			font-size: 12px;
+		}
+		@media (max-width: 640px) {
+			font-size: 8px;
+		}
+	}
+}
+.contacts {
+	grid-area: contacts;
+	// .contacts__title
+
+	&__title {
+		margin-bottom: 10px;
+	}
+
+	// .contacts__item
+
+	&__item {
+		font-size: 22px;
+		@media (max-width: 640px) {
+			font-size: 17px;
+		}
+		@media (max-width: 480px) {
+			font-size: 11px;
+		}
+	}
+
+	// .contacts__btn
+
+	&__btn {
+		display: inline-block;
+		@extend %btn;
+		border-color: #fff;
+		color: #fff;
+		margin: 15px 0px;
+		&:hover{
+			color: #000;
+			border-color: #000;
+			background-color: #fff;
+		}
+	}
+
+	// .contacts__list
+	&__list{
+		font-size: 20px;
+		@media (max-width: 640px) {
+			font-size: 16px;
+		}
+		@media (max-width: 480px) {
+			font-size: 11px;
+		}
+	}
+	
+
+	// .contacts__link
+
+	&__link {
+		display: inline-block;
+		margin-bottom: 15px;
+		height: 30px;
+	}
+	
+}
+
+.title {
+	
+	font-size: 24px;
+font-weight: 700;
+@media (max-width: 640px) {
+	font-size: 21px;
+}
+@media (max-width: 480px) {
+	font-size: 18px;
+}
+}
+.chart {
+	grid-area: chart;
+	// .chart__title
+
+	&__title {
+		margin-bottom: 18px;
+	}
+
+	// .chart__text
+
+	&__text {
+	}
+}
+.requisites {
+	grid-area: requisites;
+	// .requisites__title
+
+	&__title {
+		margin-bottom: 18px;
+	}
+
+	// .requisites__text
+
+	&__text {
+		min-height: 20px;
+		margin-bottom: 14px;
+	}
+}
+.to-be-paid {
+	grid-area: to-be-paid;
+	// .to-be-paid__title
+
+	&__title {
+		margin-bottom: 12px;
+	}
+
+	// .to-be-paid__img
+
+	&__img + &__img{
+		margin-left: 20px;
+	}
+}
+.we-deliver {
+	grid-area: we-deliver;
+	// .we-deliver__title
+
+	&__title {
+		margin-bottom: 12px;
+	}
+
+	// .we-deliver__img
+
+	&__img {
+		min-height: 27px;
+	}
+	&__img + &__img {
+		margin-left: 20px;
+	}
+}
+.subscription {
+	grid-area: subscription;
+	// .subscription__title
+
+	&__title {
+		margin-bottom: 12px;
+	}
+
+	// .subscription__img
+
+	&__img + &__img {
+		margin-left: 7px;
+	}
+}
+
+.contacts-mail{
+	background: url('../img/mail 1 (1).svg') 0 0 / 29px no-repeat;
+	padding-left: 40px;
+	@media (max-width: 640px) {
+		background: url('../img/mail 1 (1).svg') 0 0 / 22px no-repeat;
+		padding-left: 35px;
+	}
+	@media (max-width: 480px) {
+		background: url('../img/mail 1 (1).svg') 0 0 / 15px no-repeat;
+		padding-left: 25px;
+	}
+}
+.contacts-scipe{
+	background: url('../img/skype.svg') 0 0 no-repeat;
+	padding-left: 40px;
+	@media (max-width: 640px) {
+		background: url('../img/skype.svg') 0 0 / 22px no-repeat;
+		padding-left: 35px;
+	}
+	@media (max-width: 480px) {
+		background: url('../img/skype.svg') 0 0 / 15px no-repeat;
+		padding-left: 25px;
+	}
+}
+.contacts-tel{
+	background: url('../img/telephone2.png') 0 0 no-repeat;
+	padding-left: 40px;
+	@media (max-width: 640px) {
+		background: url('../img/telephone2.png') 0 0 / 22px no-repeat;
+		padding-left: 35px;
+	}
+	@media (max-width: 480px) {
+		background: url('../img/telephone2.png') 0 0 / 15px no-repeat;
+		padding-left: 25px;
+	}
+}
+.contacts-watsapp{
+	background: url('../img/whatsapp\ \(1\)\ 1.svg') 0 0 / 27px no-repeat;
+	padding-left: 37px;
+	@media (max-width: 640px) {
+		background: url('../img/whatsapp\ \(1\)\ 1.svg') 0 0 / 22px no-repeat;
+		padding-left: 35px;
+	}
+	@media (max-width: 480px) {
+		background: url('../img/whatsapp\ \(1\)\ 1.svg') 0 0 / 15px no-repeat;
+		padding-left: 25px;
+	}
+}
+

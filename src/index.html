@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+	@@include('html/header/header.html',{})
+	<main class="main">
+		<section class="content">	
+			@@include('html/main/calculation.html',{})
+			@@include('html/main/order.html',{})
+			@@include('html/main/what-is-price.html',{})
+			@@include('html/main/why-choose-us.html',{})			
+			@@include('html/main/offer.html',{})						
+			@@include('html/main/stages.html',{})									
+			@@include('html/main/products.html',{})										
+			@@include('html/main/reviews.html',{})											
+			@@include('html/main/answers.html',{})	
+		</section>
+	</main>
+	@@include('html/footer/footer.html',{})
+</div>
+<div class="modal">
+	<div class="modal__body">
+		<div class="modal__title">Ваш заказ оформлен !</div>
+		<p class="modal__icon"><img src="./img/cross-symbol_icon-icons.com_74149.png" alt="Крестик"></p>
+	</div>
+</div>
+<script src="js/app.min.js"></script>
+</body>
+
+</html>

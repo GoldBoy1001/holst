@@ -1,0 +1,125 @@
+@import './nulestyle';
+
+// ============ Color =============
+
+$color_1B: #F5841B;
+$color_26: #FFCF26;
+$color_2e: #FA5F2E;
+$color_05: #360B05;
+$color_04: #341B04;
+
+
+// ============== Fonts ===============
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500&family=Raleway:wght@500&family=Roboto:wght@400;500;700;900&display=swap');
+
+
+// ========================================================================================
+
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	background-color: #fff;
+	position: relative;
+}
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: hsl(0, 0%, 0%, 0.8);
+	z-index: 0;
+	display: flex;
+	
+		justify-content: center;
+		align-items: center;
+	opacity: 0;
+	overflow: hidden;
+	height: 0;
+   transition: opacity 0.5s;
+	// .modal__body
+
+	&__body {
+		padding: 100px 50px ;
+		max-width: 800px;
+		background-color: #fff;
+		position: relative;
+		border-radius: 10px;
+	}
+
+	// .modal__title
+
+	&__title {
+		font-size: 54px;
+	}
+	&__icon{
+		position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+	}
+}
+
+.modal.show{
+	opacity: 1;
+	overflow: visible;
+	height: 100%;
+	z-index: 1001;
+}
+.wrapper{
+	min-height: 100%;
+	display: grid;
+	grid-template: minmax(100px, auto) 1fr minmax(300px, auto) / 1fr;
+	grid-template-areas:
+	 "header"
+	 "main"
+	 "footer"
+} 
+
+%btn {
+	cursor: pointer;
+	padding: 10px 18px;
+	color: $color_1B;			
+	font-weight: 700;
+	border-radius: 43px;
+	border: 1px solid $color_1B;
+	transition: 0.5s linear;
+	background: var(--cta-gradient, linear-gradient(273deg, #F5841B 0.45%, #FFA826 105.52%));
+	position: relative;
+	z-index: 1000;
+	&::before{
+		content: "";
+		  display: block;
+		  opacity: 0;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  border-radius: 43px;
+		  background: var(--cta-gradient, linear-gradient(273deg, #FFA826 0.45%,  #F5841B 105.52%));
+		  transition: opacity 0.3s ease-in-out;
+		  z-index: -1000;
+	}
+	&:hover::before {
+		opacity: 1;
+	}
+	&:hover{
+		color: #fff;
+	}
+	&:active{
+		transform: scale(0.8, 0.8)
+	}
+}
+
+// ============ Style @import ===============
+@import './styleHeader';
+@import './styleMain';
+@import './styleFooter';
+
+@import './styleElement/burger.scss'
