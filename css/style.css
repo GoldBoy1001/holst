@@ -861,8 +861,6 @@ body {
 }
 
 .params .size__img {
-  max-width: 77px;
-  height: 145px;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
