@@ -807,11 +807,12 @@ body {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto;
-  -ms-grid-columns: 40px (minmax(45px, 1fr))[7];
+  -ms-grid-columns: 40px 20px minmax(45px, 1fr) 20px minmax(45px, 1fr) 20px minmax(45px, 1fr) 20px minmax(45px, 1fr) 20px minmax(45px, 1fr) 20px minmax(45px, 1fr) 20px minmax(45px, 1fr);
       grid-template: auto/40px repeat(7, minmax(45px, 1fr));
+  gap: 20px;
 }
 
-.params .size-title {
+.params .size__title {
   -ms-grid-column: 2;
   -ms-grid-column-span: 7;
   grid-column: 2/9;
@@ -886,9 +887,9 @@ body {
 .params .img3,
 .params .img4 {
   display: none;
-  -ms-grid-row: 3 !important;
-  -ms-grid-row-span: 1 !important;
-  grid-row: 3/4 !important;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2/4;
