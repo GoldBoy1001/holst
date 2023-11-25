@@ -867,8 +867,8 @@ body {
   -ms-grid-row-span: 1;
   grid-row: 3/4;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
-  grid-column: 2/5;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
   border-radius: 5px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
