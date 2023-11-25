@@ -884,6 +884,12 @@ body {
 .params .img3,
 .params .img4 {
   display: none;
+  -ms-grid-row: 3 !important;
+  -ms-grid-row-span: 1 !important;
+  grid-row: 3/4 !important;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
 }
 
 .params .coverage-btn2,
