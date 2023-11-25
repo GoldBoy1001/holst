@@ -804,6 +804,8 @@ body {
 }
 
 .params .size {
+  display: -ms-grid;
+  display: grid;
   -ms-grid-rows: auto;
   -ms-grid-columns: 40px (minmax(45px, 1fr))[7];
       grid-template: auto/40px repeat(7, minmax(45px, 1fr));
@@ -861,6 +863,8 @@ body {
 }
 
 .params .size__img {
+  max-width: 77px;
+  height: 145px;
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
