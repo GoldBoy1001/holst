@@ -866,12 +866,12 @@ body {
 .params .size .size__img {
   max-width: 77px;
   height: 145px;
-  -ms-grid-row: 3 !important;
-  -ms-grid-row-span: 1 !important;
-  grid-row: 3/4 !important;
-  -ms-grid-column: 2 !important;
-  -ms-grid-column-span: 2 !important;
-  grid-column: 2/4 !important;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
   border-radius: 5px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -2294,6 +2294,15 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   /* Задает затемнение фона */
   z-index: 100;
+}
+
+.size__img {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
 }
 
 @media (min-width: 1199px) {
