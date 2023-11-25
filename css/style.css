@@ -870,12 +870,6 @@ body {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   padding: 12px;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2/4;
   background: #FFF;
   -webkit-box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.05);
